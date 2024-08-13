@@ -1,0 +1,34 @@
+package javaLearn;
+
+class parentfather{
+	public parentfather() {
+//		super(); by default is present
+		System.out.println("in parent default");
+	}
+	public parentfather(int val) {
+//		super();
+		System.out.println("in parent parameterized "+val);
+	}
+}
+class childson extends parentfather{
+	public childson() {
+//		super(); by default is present
+		System.out.println("in child default");
+	}
+
+	public childson(int i) {
+//		super();// by default is present
+		super(10+2);
+		System.out.println("in child parameterized "+i);
+	}
+}
+public class SuperKeyword {
+	public static void main(String[] args) {
+//		Achieved by inheritance concept
+//		used to access immediate parent class variables,methods and constructors from child class
+//		
+//	note: name of Base class and derived class variables,methods and constructors should be same
+		
+		childson obj=new childson(10);
+	}
+}

@@ -1,0 +1,15 @@
+package javaLearn;
+
+public class Opertors {
+
+	public static void main(String[] args) {
+		int a=2;
+		int b=7;
+//		int c=a+b;//add
+//		double c=(double)a/b;// type casting
+		int c=a%b;//quotient
+		System.out.println(c);
+		
+	}
+
+}

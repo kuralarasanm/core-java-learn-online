@@ -1,0 +1,95 @@
+package MultiThreading;
+
+//class hi extends Thread {
+//
+//	public void show() {
+//		for (int i = 0; i < 5; i++) {
+//			System.out.println("hi");
+//			try {
+//				Thread.sleep(500);
+//			} catch (InterruptedException e) {
+//				e.printStackTrace();
+//			}
+//		}
+//	}
+//}
+//
+//class hello extends Thread {
+//	public void show() {
+//		for (int i = 0; i < 5; i++) {
+//			System.out.println("hello");
+//			try {
+//				Thread.sleep(500);
+//			} catch (InterruptedException e) {
+//				e.printStackTrace();
+//			}
+//		}
+//	}
+//}
+//
+//public class MultiThreadingUsingThreadClass {
+//	public static void main(String[] args) {
+////		what is MultiThreading? - one process do and do another process
+////		why we need threads? - subprocess - threads
+//	//		implementing Multithreading in java by
+//	//		   1. using Thread class
+//	//		   2. using Runnable Interface
+////		   
+////		   Thread:
+////			   Individual unit of a process
+//
+//		hi obj = new hi();
+//		hello obj1 = new hello();
+//		obj.show();
+//		obj1.show();
+//
+//	}
+//}
+//
+//class hi extends Thread { // thread inside interface run() method
+//	@Override
+//	public void run() { // so we use run
+//		for (int i = 0; i < 10; i++) {
+//			System.out.println("hi");
+//			try {
+//				Thread.sleep(1000);
+//			} catch (InterruptedException e) {
+//				e.printStackTrace();
+//			}
+//		}
+//	}
+//}
+
+class hello extends Thread {
+	@Override
+	public void run() {
+		for (int i = 0; i < 10; i++) {
+			System.out.println("hello");
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+}
+
+public class MultiThreadingUsingThreadClass {
+	public static void main(String[] args) {
+
+//		hi obj = new hi();
+//		hello obj1 = new hello();
+//		obj.start();
+//		obj1.start();
+
+		hi obj = new hi();
+		hello obj1 = new hello();
+		obj.start();
+		try {
+			Thread.sleep(500);
+		} catch (InterruptedException e) {
+		}
+		obj1.start();
+
+	}
+}

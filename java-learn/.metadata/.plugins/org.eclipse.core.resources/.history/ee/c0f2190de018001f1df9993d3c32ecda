@@ -1,0 +1,29 @@
+package javaLearn;
+
+class abcd {
+	int num1, num2, result;
+
+	abcd() {
+		num1 = 10;
+		num2 = 20;
+	}
+
+	void display() {
+		result = num1 + num2;
+		System.out.println("result"+result);
+	}
+}
+
+public class Constructor {
+	public static void main(String[] args) {
+//		CONSTRUCTORS (method)
+//		
+//		same name as class name
+//		never return anything
+//		used to allocate memory and initialize object
+
+		abcd obj = new abcd();
+		obj.display();
+
+	}
+}

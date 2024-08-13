@@ -1,0 +1,23 @@
+package javaLearn;
+
+class outer{
+	//variable
+	//methods
+	//constructors
+	//class
+	
+	class inner{
+		public void show() {
+			System.out.println("in show method");
+		}
+	}
+	
+}
+public class InnerClass {
+	public static void main(String[] args) {
+		//inner class - a class inside a class
+		outer out=new outer();
+		outer.inner obj=out.new inner();
+		obj.show();
+	}
+}

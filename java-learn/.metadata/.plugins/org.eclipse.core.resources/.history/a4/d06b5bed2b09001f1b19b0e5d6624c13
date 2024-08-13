@@ -1,0 +1,19 @@
+package javaLearn;
+
+class student{
+	//1.Methods
+	//2.variables(data members)
+	String name;
+	int rank;
+	
+	void display() {
+		System.out.println("name = "+name);
+	}
+}
+
+public class ClassAndObject {
+	public static void main(String[] args) {
+		student s1 =new student();
+		
+	}
+}

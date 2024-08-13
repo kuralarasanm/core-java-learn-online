@@ -1,0 +1,9 @@
+package JAVAAMIGOSCODE;
+
+public class NonPrimitiveDataTypes {
+	public static void main(String[] args) {
+		// non primitive data types
+		String name=new String("kuralarasan");
+		System.out.println(name.toUpperCase());
+	}
+}

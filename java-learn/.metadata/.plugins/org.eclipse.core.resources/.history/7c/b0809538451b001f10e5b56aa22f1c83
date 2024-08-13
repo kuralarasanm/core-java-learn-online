@@ -1,0 +1,19 @@
+package javaLearn;
+
+class Student{
+	String name;
+	int age;
+	String teacher;
+}
+public class StaticKeyword {
+	public static void main(String[] args) {
+		Student s1=new Student();
+		Student s2=new Student();
+		s1.name="kural";
+		s1.age=23;
+		s1.teacher="nathani";
+		s1.name="kuralarasan";
+		s1.age=23;
+		s1.teacher="karthi";
+	}
+}

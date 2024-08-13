@@ -1,0 +1,35 @@
+package javaLearn;
+
+public class Patterns {
+	public static void main(String[] args) {
+//		 0123
+//		0****
+//		1****
+//		2****
+//		3****
+		
+//		for(int i=0;i<4;i++) { // (rows)
+//			for(int j=0;j<4;j++) { // (columns)
+//				System.out.print("*");
+//			}
+//			System.out.println();
+//		}
+//		 0123
+//		0****
+//		1*  *
+//		2*  *
+//		3****
+		for(int i=0;i<4;i++) { // (rows)
+			for(int j=0;j<4;j++) { // (columns)
+				if(i==0 || i==3||j==0||j==3) {
+					System.out.print("*");
+				}
+				else {
+					System.out.print(" ");
+				}
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+	}
+}

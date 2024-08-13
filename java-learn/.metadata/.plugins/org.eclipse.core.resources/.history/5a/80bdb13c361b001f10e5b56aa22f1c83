@@ -1,0 +1,23 @@
+package javaLearn;
+
+class parent{
+	public parent() {
+		super();
+		System.out.println("in parent default");
+	}
+}
+class child extends parent{
+	public child() {
+		System.out.println("in child default");
+	}
+}
+public class SuperKeyword {
+	public static void main(String[] args) {
+//		Achieved by inheritance concept
+//		used to access immediate parent class variables,methods and constructors from child class
+//		
+//	note: name of Base class and derived class variables,methods and constructors should be same
+		
+		child obj=new child();
+	}
+}

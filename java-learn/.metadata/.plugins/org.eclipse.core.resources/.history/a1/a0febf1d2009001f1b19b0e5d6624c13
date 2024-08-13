@@ -1,0 +1,14 @@
+package javaLearn;
+
+public class Opertors {
+
+	public static void main(String[] args) {
+		int a=2;
+		int b=7;
+//		int c=a+b;//add
+		double c=a/b;
+		System.out.println(c);
+		
+	}
+
+}
